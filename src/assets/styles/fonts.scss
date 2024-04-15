@@ -1,0 +1,30 @@
+$SfDisplay: ('Semibold', 600),
+('Medium', 500);
+$SfText: ('Medium', 500),
+('Regular', 400);
+
+
+
+@each $name,
+$weight in $SfDisplay {
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        src: url('@/assets/fonts/SF-Pro-Display-#{$name}.otf');
+        font-style: normal;
+        font-weight: $weight;
+    }
+
+}
+
+@each $name,
+$weight in $SfText {
+
+    @font-face {
+        font-family: 'SF Pro Text';
+        src: url('@/assets/fonts/SFProText-#{$name}.ttf');
+        font-style: normal;
+        font-weight: $weight;
+    }
+
+}

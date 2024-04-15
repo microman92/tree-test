@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "circle-progress.vue": "^3.1.0",
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "gh-pages": "^6.1.1",
+    "vite": "^4.4.11"
+  }
+}
